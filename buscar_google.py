@@ -59,52 +59,11 @@ def buscar_informacoes_google(cliente, estado, cidade):
                     By.XPATH, "/html/body/div[1]/div/div/div/div[1]/p[1]/span[1]/b").text.strip()
             except Exception as e:
                 informacoes['CNPJ'] = 'N/A'
-
-            # Nome Fantasia
-            try:
-                informacoes['Nome Fantasia'] = driver.find_element(
-                    By.XPATH, "/html/body/div[1]/div/div/div/div[1]/p[3]/span/b").text.strip()
-            except Exception as e:
-                informacoes['Nome Fantasia'] = 'N/A'
-
-            # Logradouro
-            try:
-                informacoes['Logradouro'] = driver.find_element(
-                    By.XPATH, "/html/body/div[1]/div/div/div/div[1]/p[16]/span/b").text.strip()
-            except Exception as e:
-                informacoes['Logradouro'] = 'N/A'
-
-            # Complemento
-            try:
-                informacoes['Complemento'] = driver.find_element(
-                    By.XPATH, "/html/body/div[1]/div/div/div/div[1]/p[17]/span/b").text.strip()
-            except Exception as e:
-                informacoes['Complemento'] = 'N/A'
-
-            # Bairro
-            try:
-                informacoes['Bairro'] = driver.find_element(
-                    By.XPATH, "/html/body/div[1]/div/div/div/div[1]/p[18]/span/b").text.strip()
-            except Exception as e:
-                informacoes['Bairro'] = 'N/A'
-
-            # CEP
-            try:
-                informacoes['CEP'] = driver.find_element(
-                    By.XPATH, "/html/body/div[1]/div/div/div/div[1]/p[19]/span/b").text.strip()
-            except Exception as e:
-                informacoes['CEP'] = 'N/A'
-
             return informacoes
         else:
             # Se não encontrou nenhum link válido
             informacoes = {
-                'CNPJ': 'N/A',
-                'Nome Fantasia': 'N/A',
-                'Logradouro': 'N/A',
-                'Complemento': 'N/A',
-                'Bairro': 'N/A',
-                'CEP': 'N/A'
+                'CNPJ': 'N/A'
             }
             return informacoes
 

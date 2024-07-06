@@ -1,12 +1,9 @@
 import pandas as pd
 import json
-import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from API_CNPJ_biz import get_company_info
 from buscar_google import buscar_informacoes_google
-
-# Script para ler um arquivo Excel contendo múltiplas planilhas,
-# normalizar os valores para UPPERCASE e remover espaços em branco no final,
-# e escrever os registros em um arquivo JSON no final do processamento.
 
 # Função para normalizar string para UPPERCASE e sem espaços em branco no final
 
@@ -17,8 +14,9 @@ def normalizar_valor(valor):
         return valor.strip().upper()
     return 'N/A'  # Retorna 'N/A' se o valor não for uma string (caso de NaN)
 
-
 # Função para buscar informações utilizando threads
+
+
 def buscar_informacoes_thread(registro):
     cliente = registro['Cliente']
     estado = registro['Estado']
@@ -27,8 +25,12 @@ def buscar_informacoes_thread(registro):
     # Realiza a busca de informações do Google
     retorno = buscar_informacoes_google(cliente, estado, cidade)
 
+    # Realiza a chamada na API do CNPJ BIZ
+    informacoes_api = get_company_info(retorno['CNPJ'])
+
     # Atualiza o registro com as informações encontradas
     registro.update(retorno)
+    registro.update(informacoes_api)
 
 
 # Caminho para o arquivo Excel
@@ -69,17 +71,18 @@ for nome_planilha in xls.sheet_names:
         # Adicionando o registro à lista de registros
         registros.append(registro)
 
-# Criando uma lista de threads para executar a busca de informações
-threads = []
-for registro in registros:
-    thread = threading.Thread(
-        target=buscar_informacoes_thread, args=(registro,))
-    threads.append(thread)
-    thread.start()
+# Definindo o número máximo de threads
+max_threads = 10
 
-# Esperando todas as threads terminarem
-for thread in threads:
-    thread.join()
+# Criando um ThreadPoolExecutor para limitar a quantidade de threads
+with ThreadPoolExecutor(max_workers=max_threads) as executor:
+    # Criando uma lista para armazenar os futuros
+    futures = [executor.submit(buscar_informacoes_thread, registro)
+               for registro in registros]
+
+    # Aguardando todas as threads terminarem
+    for future in as_completed(futures):
+        future.result()
 
 # Escrevendo a lista de registros em um arquivo JSON
 caminho_saida_json = 'registros.json'

@@ -8,11 +8,9 @@
         "Modelo": "OPTIMA 8300DV",
         "Planilha": "ABC",
         "CNPJ": "19.440.696/0001-03",
-        "Nome Fantasia": "3Rlab Ribersolo Laboratorio de Analises Agropecuarias S.a.",
-        "Logradouro": "Joaquim Sales",
-        "Complemento": "37200-000",
-        "Bairro": "N/A",
-        "CEP": "N/A"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "ICP",
@@ -23,11 +21,9 @@
         "Modelo": "N/A",
         "Planilha": "ABC",
         "CNPJ": "09.371.163/0001-55",
-        "Nome Fantasia": "Labominas",
-        "Logradouro": "Rua A, Alphaville II, SN",
-        "Complemento": "Lote 10 Quadra03",
-        "Bairro": "Coqueiro Rural",
-        "CEP": "36900-000"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "AA",
@@ -38,11 +34,9 @@
         "Modelo": "GBC",
         "Planilha": "ABC",
         "CNPJ": "09.371.163/0001-55",
-        "Nome Fantasia": "Labominas",
-        "Logradouro": "Rua A, Alphaville II, SN",
-        "Complemento": "Lote 10 Quadra03",
-        "Bairro": "Coqueiro Rural",
-        "CEP": "36900-000"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "ICP-MS",
@@ -53,11 +47,13 @@
         "Modelo": "9000 SERIES - AXIAL/RADIAL",
         "Planilha": "ABC",
         "CNPJ": "05.642.544/0001-70",
-        "Nome Fantasia": "07/05/2003",
-        "Logradouro": "85805-010",
-        "Complemento": "N/A",
-        "Bairro": "N/A",
-        "CEP": "A3Q Laboratorios LTDA\nRua Uruguai 533\nCentro\nCascavel PR\n85805-010"
+        "nome_fantasia": null,
+        "cep": "85805-010",
+        "tipo_logradouro": "Rua",
+        "logradouro": "Uruguai",
+        "numero": "533",
+        "complemento": "",
+        "bairro": "Centro"
     },
     {
         "Equipamento": "ICP-OES",
@@ -68,11 +64,13 @@
         "Modelo": "710-ES",
         "Planilha": "ABC",
         "CNPJ": "05.642.544/0001-70",
-        "Nome Fantasia": "07/05/2003",
-        "Logradouro": "85805-010",
-        "Complemento": "N/A",
-        "Bairro": "N/A",
-        "CEP": "A3Q Laboratorios LTDA\nRua Uruguai 533\nCentro\nCascavel PR\n85805-010"
+        "nome_fantasia": null,
+        "cep": "85805-010",
+        "tipo_logradouro": "Rua",
+        "logradouro": "Uruguai",
+        "numero": "533",
+        "complemento": "",
+        "bairro": "Centro"
     },
     {
         "Equipamento": "AA",
@@ -83,11 +81,13 @@
         "Modelo": "ANALYTIC JENA",
         "Planilha": "DEF",
         "CNPJ": "N/A",
-        "Nome Fantasia": "N/A",
-        "Logradouro": "N/A",
-        "Complemento": "N/A",
-        "Bairro": "N/A",
-        "CEP": "N/A"
+        "nome_fantasia": "N/A",
+        "cep": "N/A",
+        "tipo_logradouro": "N/A",
+        "logradouro": "N/A",
+        "numero": "N/A",
+        "complemento": "N/A",
+        "bairro": "N/A"
     },
     {
         "Equipamento": "AA",
@@ -98,11 +98,13 @@
         "Modelo": "N/A",
         "Planilha": "DEF",
         "CNPJ": "13.280.276/0001-12",
-        "Nome Fantasia": "07/04/1983",
-        "Logradouro": "N/A",
-        "Complemento": "N/A",
-        "Bairro": "N/A",
-        "CEP": "N/A"
+        "nome_fantasia": null,
+        "cep": "43813-000",
+        "tipo_logradouro": "Via",
+        "logradouro": "Matoim",
+        "numero": "S/N",
+        "complemento": "",
+        "bairro": "Porto de Aratu"
     },
     {
         "Equipamento": "ICP-MS",
@@ -113,11 +115,9 @@
         "Modelo": "ELAN DRC II - AXIAL",
         "Planilha": "DEF",
         "CNPJ": "46.139.952/0001-91",
-        "Nome Fantasia": "Departamento de Agua e Esgoto",
-        "Logradouro": "17012-020",
-        "Complemento": "N/A",
-        "Bairro": "N/A",
-        "CEP": "Dae Departamento de Agua e Esgoto\nRua Padre Joao 11-25\nVila Santa Tereza\nBauru SP\n17012-020"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "ICP-OES",
@@ -128,11 +128,9 @@
         "Modelo": "VISTA - RADIAL",
         "Planilha": "DEF",
         "CNPJ": "46.139.952/0001-91",
-        "Nome Fantasia": "Departamento de Agua e Esgoto",
-        "Logradouro": "17012-020",
-        "Complemento": "N/A",
-        "Bairro": "N/A",
-        "CEP": "Dae Departamento de Agua e Esgoto\nRua Padre Joao 11-25\nVila Santa Tereza\nBauru SP\n17012-020"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "AA",
@@ -143,11 +141,9 @@
         "Modelo": "N/A",
         "Planilha": "DEF",
         "CNPJ": "61.486.650/0001-83",
-        "Nome Fantasia": "Diagnosticos da America S.a .",
-        "Logradouro": "Alphaville",
-        "Complemento": "06455-010",
-        "Bairro": "N/A",
-        "CEP": "N/A"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "AA",
@@ -158,11 +154,9 @@
         "Modelo": "PERKINELMER",
         "Planilha": "DEF",
         "CNPJ": "60.160.546/0001-31",
-        "Nome Fantasia": "004905696.00-75",
-        "Logradouro": "financeiro@digimed.ind.br",
-        "Complemento": "(11) 5633-2200",
-        "Bairro": "Rua Dos Marianos, 227",
-        "CEP": "Campo Grande"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "ICP-OES",
@@ -173,11 +167,9 @@
         "Modelo": "AVIO 500",
         "Planilha": "DEF",
         "CNPJ": "60.160.546/0001-31",
-        "Nome Fantasia": "004905696.00-75",
-        "Logradouro": "financeiro@digimed.ind.br",
-        "Complemento": "(11) 5633-2200",
-        "Bairro": "Rua Dos Marianos, 227",
-        "CEP": "Campo Grande"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "AA",
@@ -188,11 +180,9 @@
         "Modelo": "VARIAN",
         "Planilha": "GHI",
         "CNPJ": "57.442.774/0001-90",
-        "Nome Fantasia": "Galena Quimica e Farmaceutica LTDA",
-        "Logradouro": "Chacaras Campos dos Amarais",
-        "Complemento": "13082-050",
-        "Bairro": "N/A",
-        "CEP": "N/A"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "AA",
@@ -203,11 +193,13 @@
         "Modelo": "VARIAN",
         "Planilha": "GHI",
         "CNPJ": "N/A",
-        "Nome Fantasia": "N/A",
-        "Logradouro": "N/A",
-        "Complemento": "N/A",
-        "Bairro": "N/A",
-        "CEP": "N/A"
+        "nome_fantasia": "N/A",
+        "cep": "N/A",
+        "tipo_logradouro": "N/A",
+        "logradouro": "N/A",
+        "numero": "N/A",
+        "complemento": "N/A",
+        "bairro": "N/A"
     },
     {
         "Equipamento": "ICP-OES",
@@ -218,11 +210,9 @@
         "Modelo": "VISTA - RADIAL",
         "Planilha": "GHI",
         "CNPJ": "33.435.231/0001-87",
-        "Nome Fantasia": "Ge Celma Ltda.",
-        "Logradouro": "Rua Alice Herve, 356",
-        "Complemento": "Bingen",
-        "Bairro": "25669-900",
-        "CEP": "N/A"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "ICP-MS",
@@ -233,11 +223,9 @@
         "Modelo": "ELAN 500 - AXIAL",
         "Planilha": "GHI",
         "CNPJ": "33.435.231/0001-87",
-        "Nome Fantasia": "Ge Celma Ltda.",
-        "Logradouro": "Rua Alice Herve, 356",
-        "Complemento": "Bingen",
-        "Bairro": "25669-900",
-        "CEP": "N/A"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     },
     {
         "Equipamento": "ICP-OES",
@@ -248,10 +236,8 @@
         "Modelo": "VISTA - AXIAL",
         "Planilha": "GHI",
         "CNPJ": "33.435.231/0001-87",
-        "Nome Fantasia": "Ge Celma Ltda.",
-        "Logradouro": "Rua Alice Herve, 356",
-        "Complemento": "Bingen",
-        "Bairro": "25669-900",
-        "CEP": "N/A"
+        "error": "Failed to fetch data",
+        "status_code": 422,
+        "response": "{\"message\":\"Seus cr\\u00e9ditos acabaram, entre em contato com o suporte para adquirir mais.\"}"
     }
 ]
