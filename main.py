@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from buscar_google import buscar_informacoes_google
+from buscar_google import buscar_informacoes_econodata, buscar_informacoes_google
 
 # Função para normalizar string para UPPERCASE e sem espaços em branco no final
 
@@ -21,13 +21,14 @@ def buscar_informacoes_thread(registro):
     cidade = registro['Cidade']
 
     # Realiza a busca de informações do cnpj.biz
-    retorno = buscar_informacoes_google(cliente, estado, cidade)
-
+    retorno_cnpj = buscar_informacoes_google(cliente, estado, cidade)
     # Realiza a busca de informações do econodata.com.br
+    retorno_enderco = buscar_informacoes_econodata(retorno_cnpj['CNPJ'])
     #retorno = buscar_informacoes_econodata(cnpj)
 
     # Atualiza o registro com as informações encontradas no cnpj
-    registro.update(retorno)
+    registro.update(retorno_cnpj)
+    registro.update(retorno_enderco)
 
     # Atualiza o registro com as informações encontradas
 

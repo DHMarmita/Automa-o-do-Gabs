@@ -4,7 +4,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import re
+import time
 
 
 def buscar_informacoes_google(cliente, estado, cidade):
@@ -88,13 +91,23 @@ def buscar_informacoes_econodata(cnpj):
         search_box.send_keys(f"econodata - {cnpj}")
         search_box.send_keys(Keys.RETURN)
 
-
         # Verifica se há resultados na página
         try:
             first_result = driver.find_element(By.XPATH, "(//h3)[1]/../..")
             first_result.click()
         except:
             return {"nome_fantasia": "N/A", "logradouro": "N/A", "bairro": "N/A", "cep": "N/A"}
+
+        try:
+            # Espera até que a imagem seja visível na página
+            image_element = WebDriverWait(driver, 20).until(
+                EC.visibility_of_element_located((By.XPATH, "//img[@alt='icone fechar']"))
+            )
+            # Clique na imagem
+            image_element.click()
+
+        except Exception as e:
+            print(f"Erro ao clicar na imagem: {e}")
 
         # Tenta extrair o nome fantasia usando o XPath fornecido
         try:
@@ -136,9 +149,3 @@ def buscar_informacoes_econodata(cnpj):
 
     finally:
         driver.quit()
-
-
-# Exemplo de uso
-cnpj = "33.435.231/0001-87"
-resultado = buscar_informacoes_econodata(cnpj)
-print(resultado)

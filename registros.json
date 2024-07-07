@@ -7,7 +7,11 @@
         "Marca ICP": "PERKINELMER",
         "Modelo": "OPTIMA 8300DV",
         "Planilha": "ABC",
-        "CNPJ": "N/A"
+        "CNPJ": "19.440.696/0001-03",
+        "nome_fantasia": "Não Disponível",
+        "logradouro": "Logradouro:Rua Fabio Modesto, 158",
+        "bairro": "Vila Joaquim Sales",
+        "cep": "N/A"
     },
     {
         "Equipamento": "ICP",
@@ -17,7 +21,11 @@
         "Marca ICP": "N/A",
         "Modelo": "N/A",
         "Planilha": "ABC",
-        "CNPJ": "N/A"
+        "CNPJ": "09.371.163/0001-55",
+        "nome_fantasia": "LABOMINAS",
+        "logradouro": "Logradouro:Rua A, Alphaville Ii",
+        "bairro": "Coqueiro",
+        "cep": "N/A"
     },
     {
         "Equipamento": "AA",
@@ -27,7 +35,11 @@
         "Marca ICP": "GBC",
         "Modelo": "GBC",
         "Planilha": "ABC",
-        "CNPJ": "N/A"
+        "CNPJ": "09.371.163/0001-55",
+        "nome_fantasia": "LABOMINAS",
+        "logradouro": "Logradouro:Rua A, Alphaville Ii",
+        "bairro": "Coqueiro",
+        "cep": "N/A"
     },
     {
         "Equipamento": "ICP-MS",
@@ -37,7 +49,11 @@
         "Marca ICP": "SHIMADZU",
         "Modelo": "9000 SERIES - AXIAL/RADIAL",
         "Planilha": "ABC",
-        "CNPJ": "N/A"
+        "CNPJ": "05.642.544/0001-70",
+        "nome_fantasia": "",
+        "logradouro": "Logradouro:Rua Uruguai, 533",
+        "bairro": "Centro",
+        "cep": "85.805-010"
     },
     {
         "Equipamento": "ICP-OES",
@@ -47,7 +63,11 @@
         "Marca ICP": "AGILENT (VARIAN)",
         "Modelo": "710-ES",
         "Planilha": "ABC",
-        "CNPJ": "N/A"
+        "CNPJ": "05.642.544/0001-70",
+        "nome_fantasia": "",
+        "logradouro": "",
+        "bairro": "",
+        "cep": ""
     },
     {
         "Equipamento": "AA",
@@ -57,7 +77,11 @@
         "Marca ICP": "ANALYTIC JENA",
         "Modelo": "ANALYTIC JENA",
         "Planilha": "DEF",
-        "CNPJ": "N/A"
+        "CNPJ": "N/A",
+        "nome_fantasia": "N/A",
+        "logradouro": "N/A",
+        "bairro": "N/A",
+        "cep": "N/A"
     },
     {
         "Equipamento": "AA",
@@ -67,7 +91,11 @@
         "Marca ICP": "PERKINELMER",
         "Modelo": "N/A",
         "Planilha": "DEF",
-        "CNPJ": "N/A"
+        "CNPJ": "13.280.276/0001-12",
+        "nome_fantasia": "N/A",
+        "logradouro": "N/A",
+        "bairro": "N/A",
+        "cep": "N/A"
     },
     {
         "Equipamento": "ICP-MS",
@@ -77,7 +105,11 @@
         "Marca ICP": "PERKINELMER",
         "Modelo": "ELAN DRC II - AXIAL",
         "Planilha": "DEF",
-        "CNPJ": "N/A"
+        "CNPJ": "46.139.952/0001-91",
+        "nome_fantasia": "N/A",
+        "logradouro": "Logradouro:Rua Padre Joao, 11-25",
+        "bairro": "Vila Santa Tereza",
+        "cep": "17.012-020"
     },
     {
         "Equipamento": "ICP-OES",
@@ -87,7 +119,11 @@
         "Marca ICP": "AGILENT (VARIAN)",
         "Modelo": "VISTA - RADIAL",
         "Planilha": "DEF",
-        "CNPJ": "N/A"
+        "CNPJ": "46.139.952/0001-91",
+        "nome_fantasia": "N/A",
+        "logradouro": "",
+        "bairro": "",
+        "cep": ""
     },
     {
         "Equipamento": "AA",
@@ -97,7 +133,11 @@
         "Marca ICP": "N/A",
         "Modelo": "N/A",
         "Planilha": "DEF",
-        "CNPJ": "N/A"
+        "CNPJ": "61.486.650/0001-83",
+        "nome_fantasia": "",
+        "logradouro": "",
+        "bairro": "",
+        "cep": "06.455-010"
     },
     {
         "Equipamento": "AA",
@@ -107,7 +147,11 @@
         "Marca ICP": "PERKINELMER",
         "Modelo": "PERKINELMER",
         "Planilha": "DEF",
-        "CNPJ": "N/A"
+        "CNPJ": "60.160.546/0001-31",
+        "nome_fantasia": "DIGIMED",
+        "logradouro": "Logradouro:Rua dos Marianos, 227",
+        "bairro": "Vila Gea",
+        "cep": "04.691-110"
     },
     {
         "Equipamento": "ICP-OES",
@@ -117,7 +161,11 @@
         "Marca ICP": "PERKINELMER",
         "Modelo": "AVIO 500",
         "Planilha": "DEF",
-        "CNPJ": "N/A"
+        "CNPJ": "60.160.546/0001-31",
+        "nome_fantasia": "",
+        "logradouro": "Logradouro:Rua dos Marianos, 227",
+        "bairro": "Vila Gea",
+        "cep": "04.691-110"
     },
     {
         "Equipamento": "AA",
@@ -127,7 +175,11 @@
         "Marca ICP": "VARIAN",
         "Modelo": "VARIAN",
         "Planilha": "GHI",
-        "CNPJ": "N/A"
+        "CNPJ": "57.442.774/0001-90",
+        "nome_fantasia": "Não Disponível",
+        "logradouro": "Logradouro:Rua Pedro Stancato, 860",
+        "bairro": "Chacaras Campos dos Amarais",
+        "cep": "13.082-050"
     },
     {
         "Equipamento": "AA",
@@ -137,7 +189,11 @@
         "Marca ICP": "VARIAN",
         "Modelo": "VARIAN",
         "Planilha": "GHI",
-        "CNPJ": "N/A"
+        "CNPJ": "N/A",
+        "nome_fantasia": "N/A",
+        "logradouro": "N/A",
+        "bairro": "N/A",
+        "cep": "N/A"
     },
     {
         "Equipamento": "ICP-OES",
@@ -147,7 +203,11 @@
         "Marca ICP": "AGILENT (VARIAN)",
         "Modelo": "VISTA - RADIAL",
         "Planilha": "GHI",
-        "CNPJ": "N/A"
+        "CNPJ": "33.435.231/0001-87",
+        "nome_fantasia": "GE CELMA",
+        "logradouro": "Logradouro:Rua Alice Herve, 356",
+        "bairro": "Bingen",
+        "cep": "25.665-010"
     },
     {
         "Equipamento": "ICP-MS",
@@ -157,7 +217,11 @@
         "Marca ICP": "PERKINELMER",
         "Modelo": "ELAN 500 - AXIAL",
         "Planilha": "GHI",
-        "CNPJ": "N/A"
+        "CNPJ": "33.435.231/0001-87",
+        "nome_fantasia": "",
+        "logradouro": "",
+        "bairro": "",
+        "cep": ""
     },
     {
         "Equipamento": "ICP-OES",
@@ -167,6 +231,10 @@
         "Marca ICP": "AGILENT (VARIAN)",
         "Modelo": "VISTA - AXIAL",
         "Planilha": "GHI",
-        "CNPJ": "N/A"
+        "CNPJ": "33.435.231/0001-87",
+        "nome_fantasia": "GE CELMA",
+        "logradouro": "Logradouro:Rua Alice Herve, 356",
+        "bairro": "Bingen",
+        "cep": "25.665-010"
     }
 ]
