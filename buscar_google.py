@@ -6,19 +6,20 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import re
-import time
 
 
 def buscar_informacoes_google(cliente, estado, cidade):
     # Configuração do webdriver do Chrome
-    options = Options()
+    chrome_options = Options()
+    # Executa o Chrome em modo headless (sem GUI)
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument('--log-level=1')
 
-    # Configuração do serviço do webdriver
-    service = Service(ChromeDriverManager().install())
-
-    # Inicialização do webdriver
-    driver = webdriver.Chrome(service=service, options=options)
+    # Instancia o driver
+    driver = webdriver.Chrome(service=Service(
+        ChromeDriverManager().install()), options=chrome_options)
 
     try:
         # Montando a query de busca no Google
@@ -78,6 +79,12 @@ def buscar_informacoes_google(cliente, estado, cidade):
 def buscar_informacoes_econodata(cnpj):
     # Configuração do ChromeDriver
     chrome_options = Options()
+    # Executa o Chrome em modo headless (sem GUI)
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument('--log-level=1')
+
     # Instancia o driver
     driver = webdriver.Chrome(service=Service(
         ChromeDriverManager().install()), options=chrome_options)
@@ -96,12 +103,13 @@ def buscar_informacoes_econodata(cnpj):
             first_result = driver.find_element(By.XPATH, "(//h3)[1]/../..")
             first_result.click()
         except:
-            return {"nome_fantasia": "N/A", "logradouro": "N/A", "bairro": "N/A", "cep": "N/A"}
+            return {"Nome Fantasia": "N/A", "Logradouro": "N/A", "Bairro": "N/A", "CEP": "N/A"}
 
         try:
             # Espera até que a imagem seja visível na página
             image_element = WebDriverWait(driver, 20).until(
-                EC.visibility_of_element_located((By.XPATH, "//img[@alt='icone fechar']"))
+                EC.visibility_of_element_located(
+                    (By.XPATH, "//img[@alt='icone fechar']"))
             )
             # Clique na imagem
             image_element.click()
@@ -142,7 +150,7 @@ def buscar_informacoes_econodata(cnpj):
         except:
             cep = "N/A"
 
-        return {"nome_fantasia": nome_fantasia, "logradouro": logradouro, "bairro": bairro, "cep": cep}
+        return {"Nome Fantasia": nome_fantasia, "Logradouro": logradouro, "Bairro": bairro, "CEP": cep}
 
     except Exception as e:
         print(f"Erro ao buscar informações: {e}")

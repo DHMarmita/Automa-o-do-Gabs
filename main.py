@@ -1,5 +1,4 @@
 import pandas as pd
-import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from buscar_google import buscar_informacoes_econodata, buscar_informacoes_google
 
@@ -83,9 +82,11 @@ with ThreadPoolExecutor(max_workers=max_threads) as executor:
     for future in as_completed(futures):
         future.result()
 
-# Escrevendo a lista de registros em um arquivo JSON
-caminho_saida_json = 'registros.json'
-with open(caminho_saida_json, 'w', encoding='utf-8') as f:
-    json.dump(registros, f, ensure_ascii=False, indent=4)
+# Convertendo a lista de registros em um DataFrame do pandas
+df_registros = pd.DataFrame(registros)
 
-print(f"Arquivo JSON gerado com sucesso: {caminho_saida_json}  Total: {len(registros)}")
+# Escrevendo o DataFrame em um arquivo Excel
+caminho_saida_excel = 'registros.xlsx'
+df_registros.to_excel(caminho_saida_excel, index=False)
+
+print(f"Arquivo Excel gerado com sucesso: {caminho_saida_excel}  Total: {len(registros)}")
