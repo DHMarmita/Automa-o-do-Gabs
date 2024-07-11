@@ -6,6 +6,12 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import re
+
+# Função para remover caracteres especiais
+def remover_caracteres_especiais(texto):
+    # Remove tudo que não for alfanumérico, espaço ou hífen
+    return re.sub(r'[^A-Za-z0-9\s-]', '', texto)
 
 
 def buscar_informacoes_google(cliente, estado, cidade):
@@ -22,6 +28,9 @@ def buscar_informacoes_google(cliente, estado, cidade):
         ChromeDriverManager().install()))
 
     try:
+        cliente = remover_caracteres_especiais(cliente)
+        estado = remover_caracteres_especiais(estado)
+        cidade = remover_caracteres_especiais(cidade)
         # Montando a query de busca no Google
         query = f"{cliente} - {estado} - {cidade} - CNPJ site:cnpj.biz"
 
