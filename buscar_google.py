@@ -10,16 +10,16 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def buscar_informacoes_google(cliente, estado, cidade):
     # Configuração do webdriver do Chrome
-    chrome_options = Options()
+    # chrome_options = Options()
     # Executa o Chrome em modo headless (sem GUI)
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument('--log-level=1')
+    # chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--no-sandbox")
+    # chrome_options.add_argument("--disable-dev-shm-usage")
+    # chrome_options.add_argument('--log-level=1')
 
     # Instancia o driver
     driver = webdriver.Chrome(service=Service(
-        ChromeDriverManager().install()), options=chrome_options)
+        ChromeDriverManager().install()))
 
     try:
         # Montando a query de busca no Google
@@ -78,16 +78,16 @@ def buscar_informacoes_google(cliente, estado, cidade):
 
 def buscar_informacoes_econodata(cnpj):
     # Configuração do ChromeDriver
-    chrome_options = Options()
+    # chrome_options = Options()
     # Executa o Chrome em modo headless (sem GUI)
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument('--log-level=1')
+    # chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--no-sandbox")
+    # chrome_options.add_argument("--disable-dev-shm-usage")
+    # chrome_options.add_argument('--log-level=1')
 
     # Instancia o driver
     driver = webdriver.Chrome(service=Service(
-        ChromeDriverManager().install()), options=chrome_options)
+        ChromeDriverManager().install()))
     # Define o tempo de espera implícito de 10 segundos
     driver.implicitly_wait(10)
 

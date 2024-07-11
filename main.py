@@ -70,7 +70,7 @@ for nome_planilha in xls.sheet_names:
         registros.append(registro)
 
 # Definindo o número máximo de threads
-max_threads = 10
+max_threads = 15
 
 # Criando um ThreadPoolExecutor para limitar a quantidade de threads
 with ThreadPoolExecutor(max_workers=max_threads) as executor:
